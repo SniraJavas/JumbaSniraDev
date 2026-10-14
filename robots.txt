@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snirajavas.github.io/JumbaSniraDev/sitemap.xml
