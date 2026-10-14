@@ -29,6 +29,19 @@
   <!--font-family: 'Open Sans', sans-serif;-->
   <!-- font icon css style-->
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style>
+    .projects { padding: 60px 0; }
+    .proj-card { background: #fff; border: 1px solid #e5e5e5; margin-bottom: 30px; overflow: hidden; }
+    .proj-img { position: relative; height: 200px; background: linear-gradient(135deg, #2b2b2b, #5a5a5a); }
+    .proj-img img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+    .proj-ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 20px; text-align: center; color: #fff; font-size: 18px; opacity: .85; }
+    .proj-body { padding: 20px; }
+    .proj-meta { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 6px; }
+    .proj-body h4 { margin: 0 0 4px; }
+    .proj-body h5 { margin: 0 0 12px; color: #cc0000; }
+    .proj-tag { display: inline-block; background: #000; color: #fff; font-size: 12px; padding: 3px 8px; margin: 0 5px 5px 0; }
+    @media (min-width: 992px) { .projects .row > div { display: flex; } .proj-card { width: 100%; } }
+  </style>
 </head>
 
 <body onLoad="load()" onUnload="GUnload()">
@@ -63,6 +76,7 @@
                         <li class="menuItem"><a href="#aboutus">About Me</a></li>
                         <li class="menuItem"><a href="#skillset">Skills</a></li>
                         <li class="menuItem"><a href="#experience">Experience</a></li>
+                        <li class="menuItem"><a href="#projects">Projects</a></li>
                         <li class="menuItem"><a href="#education">Education</a></li>
                         <li class="menuItem"><a href="#ourwork">Portfolio</a></li>
                         <li class="menuItem"><a href="#contact">Contact</a></li>
@@ -141,7 +155,7 @@
               I built Azure Service Bus microservices and Azure Functions for an insurance integration project, upgraded a logistics platform from Angular 1 to Angular 12, introduced Azure Pipelines CI/CD for a lending platform, and started my career building insurance and education applications in C# and .NET MVC.
             </p>
             <p>
-              I was born and raised in the village of Tabase in Umtata, Eastern Cape, and hold a BSc in Computer Sciences from the University of the Western Cape (2017).
+              I was born and raised in the village of Tabase in Umtata, Eastern Cape, and hold a BSc in Computer Science from the University of the Western Cape.
             </p>
             <p>I keep learning through side practice on these platforms:</p>
             <ol>
@@ -467,6 +481,145 @@
       </div>
     </section>
     <!--Work Experties end -->
+    <!--Projects start -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="heading">
+          <h2>Projects</h2>
+          <h3>Systems I have built and maintained</h3>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Amber App</span>
+                <img src="images/projects/placeholders/amber-app.jpg" alt="Amber App screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">MultiChoice Group &middot; Sep 2025 &ndash; Jul 2026</div>
+                <h4>Amber App</h4>
+                <h5>Software Developer</h5>
+                <p>The internal system that controls DStv client contracts, subscription packages, payments and inventory. It also manages DStv product listings and supports marketing operations. I onboarded into legacy Ember.js code and helped enforce structured SDLC practices across contractor-heavy teams.</p>
+                <div class="proj-tags"><span class="proj-tag">Ember.js</span><span class="proj-tag">Custom frameworks</span><span class="proj-tag">Enterprise SDLC</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Central Supplier Database (CSD)</span>
+                <img src="images/projects/placeholders/csd.jpg" alt="Central Supplier Database (CSD) screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">Tipp Focus &ndash; National Treasury &middot; Aug 2024 &ndash; Aug 2025</div>
+                <h4>Central Supplier Database (CSD)</h4>
+                <h5>Developer (Consultant)</h5>
+                <p>The government procurement system used to manage supplier registration and vetting for government tenders. I turned business requirements into technical specs, wrote SQL scripts and stored procedures for reporting, and managed Azure deployment pipelines for releases.</p>
+                <div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">.NET Core</span><span class="proj-tag">Razor</span><span class="proj-tag">SQL Server</span><span class="proj-tag">Report Builder</span><span class="proj-tag">Azure</span><span class="proj-tag">GitHub</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Engagement AI SaaS Platform</span>
+                <img src="images/projects/placeholders/engagement-ai.jpg" alt="Engagement AI SaaS Platform screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">Genii Analytics AI &middot; Jun 2022 &ndash; Apr 2024</div>
+                <h4>Engagement AI SaaS Platform</h4>
+                <h5>Software Engineer</h5>
+                <p>A Conversational Analytics and Engagement AI platform that used Azure AI to assist call centre agents in real time, helping them stay on script, ask the right questions and hold more meaningful client calls. Key questions and outcomes fed dashboards used by managers and marketing teams.</p>
+                <div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">MVC.NET</span><span class="proj-tag">SQL Server</span><span class="proj-tag">Azure AI</span><span class="proj-tag">RESTful APIs</span><span class="proj-tag">Bootstrap 5</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Credit System Management Platform</span>
+                <img src="images/projects/placeholders/credit-system.jpg" alt="Credit System Management Platform screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">Mfundopedia (for BidVest) &middot; Jan 2022 &ndash; Jun 2022</div>
+                <h4>Credit System Management Platform</h4>
+                <h5>Software Engineer</h5>
+                <p>A lending platform for BidVest that enforced borrowing rules, monitored repayments and managed delinquent accounts, streamlining the end-to-end credit and lending process.</p>
+                <div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">.NET</span><span class="proj-tag">MVC</span><span class="proj-tag">SQL Server</span><span class="proj-tag">Laravel</span><span class="proj-tag">PHP</span><span class="proj-tag">RESTful APIs</span><span class="proj-tag">Postman</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Logistics SaaS Platform</span>
+                <img src="images/projects/placeholders/logistics.jpg" alt="Logistics SaaS Platform screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">DataOrbis &middot; Jun 2021 &ndash; Dec 2021</div>
+                <h4>Logistics SaaS Platform</h4>
+                <h5>Intermediate Software Developer</h5>
+                <p>A logistics platform used to understand how products moved and were used across Africa, and to analyse the routes truck drivers most commonly use to distribute food, surfacing patterns to improve route planning. I also led the front-end migration from Angular 1 to Angular 12.</p>
+                <div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">.NET</span><span class="proj-tag">Angular 1 &amp; 12</span><span class="proj-tag">Azure</span><span class="proj-tag">Angular Material</span><span class="proj-tag">Swagger</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Insurance Claims Integration &amp; GPS Workshop Finder</span>
+                <img src="images/projects/placeholders/claims-gps.jpg" alt="Insurance Claims Integration &amp; GPS Workshop Finder screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">Affinity / Senwel Konsult &middot; Sep 2020 &ndash; Jun 2021</div>
+                <h4>Insurance Claims Integration &amp; GPS Workshop Finder</h4>
+                <h5>Mobile &amp; Integration Developer</h5>
+                <p>Connected insurance claims data from multiple brokers into a unified system, and built a GPS-based mobile app that helps policyholders find nearby car workshops approved by their insurer.</p>
+                <div class="proj-tags"><span class="proj-tag">React Native</span><span class="proj-tag">Azure Service Bus</span><span class="proj-tag">MongoDB</span><span class="proj-tag">React Leaflet</span><span class="proj-tag">RESTful APIs</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Yuzzu, Nissan Website &amp; Know Your Nation</span>
+                <img src="images/projects/placeholders/yuzzu-nissan-kyn.jpg" alt="Yuzzu, Nissan Website &amp; Know Your Nation screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">Retro Rabbit &middot; Jan 2019 &ndash; Apr 2020</div>
+                <h4>Yuzzu, Nissan Website &amp; Know Your Nation</h4>
+                <h5>Junior Fullstack Developer</h5>
+                <p>Worked on Yuzzu, a Belgian insurer&rsquo;s system, making sure application and claim rules were enforced, and used the CRM to support marketing, including translating content between French and English. I also maintained the Nissan website, built &ldquo;Know Your Nation&rdquo; (a ReactJS app that teaches children South African history through animation) and enhanced a University of Pretoria lab application.</p>
+                <div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">.NET</span><span class="proj-tag">ReactJS</span><span class="proj-tag">Django</span><span class="proj-tag">Angular 6</span><span class="proj-tag">Python</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="proj-card">
+              <div class="proj-img">
+                <span class="proj-ph">Unity Life Insurance &amp; Western Cape Education Tracker</span>
+                <img src="images/projects/placeholders/unity-life-wced.jpg" alt="Unity Life Insurance &amp; Western Cape Education Tracker screenshot" onerror="this.style.display='none'">
+              </div>
+              <div class="proj-body">
+                <div class="proj-meta">Enterprise Solution 365 &middot; Jan 2018 &ndash; Dec 2018</div>
+                <h4>Unity Life Insurance &amp; Western Cape Education Tracker</h4>
+                <h5>Developer Intern</h5>
+                <p>Helped enforce business rules for insurance applications, claims processing and legal compliance for Unity Life. I also built a Western Cape Department of Education system that tracked school progress patterns to help identify pass rates and drop-out trends.</p>
+                <div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">.NET</span><span class="proj-tag">Azure</span><span class="proj-tag">SQL Server</span><span class="proj-tag">SSRS</span><span class="proj-tag">Ajax</span><span class="proj-tag">jQuery</span><span class="proj-tag">PHP</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Projects end -->
+
     <!--Education & diploma start -->
     <section id="education" class="educationdiploma">
       <div class="container">
@@ -483,9 +636,9 @@
             </div>
           </div>
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <h4>Bachelor of Science in Computer Sciences</h4>
+            <h4>Bachelor of Science in Computer Science</h4>
             <h5>University of the Western Cape (UWC)</h5>
-            <p>Graduated in 2017 from <a href="https://cs.uwc.ac.za/" style="color: #cc0000">The University of the Western Cape</a>.
+            <p>Completed my studies in 2017 and had the degree conferred on 27 August 2018 by <a href="https://cs.uwc.ac.za/" style="color: #cc0000">The University of the Western Cape</a>.
               The degree gave me the software engineering and problem-solving foundation that I have built my career on over the last 8+ years.</p>
           </div>
         </div>
@@ -625,9 +778,10 @@
             1: 'aboutus',
             2: 'skillset',
             3: 'experience',
-            4: 'education',
-            5: 'ourwork',
-            6: 'contact'
+            4: 'projects',
+            5: 'education',
+            6: 'ourwork',
+            7: 'contact'
           },
           itemClass: 'menuItem',
           itemHover: 'active',
