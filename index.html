@@ -42,6 +42,20 @@
     .proj-tag { display: inline-block; background: #000; color: #fff; font-size: 12px; padding: 3px 8px; margin: 0 5px 5px 0; }
     @media (min-width: 992px) { .projects .row > div { display: flex; } .proj-card { width: 100%; } }
   </style>
+  <style>
+    /* Always-expanded menu: no hamburger/close toggles, links always visible */
+    .menu .nav-icon, .navArea .closeMenu, .navbar-toggle { display: none !important; }
+    .menu, .navbar-wrapper, .navwrapper, .navArea {
+      display: block !important; visibility: visible !important; opacity: 1 !important;
+      position: static; left: auto !important; right: auto !important;
+      transform: none !important; width: 100% !important; height: auto !important;
+    }
+    .navbar-collapse.collapse, .navbar-collapse.collapsing {
+      display: block !important; visibility: visible !important; height: auto !important; overflow: visible !important;
+    }
+    .navbar-nav > li { float: left; }
+    @media (max-width: 767px) { .navbar-nav > li { float: none; } }
+  </style>
 </head>
 
 <body onLoad="load()" onUnload="GUnload()">
